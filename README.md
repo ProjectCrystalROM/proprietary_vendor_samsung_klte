@@ -2,9 +2,9 @@
 
 This repository preserves the exact extracted CM11-era Galaxy S5 vendor payloads used by Project Crystal's CM10.2 reverse port. Its directory layout is intended to be checked out at `vendor/samsung`:
 
-- `klte-common/`: shared graphics, Wi-Fi, thermal, and common Samsung components.
+- `klte-common/`: shared graphics, Wi-Fi, thermal, common Samsung components, and S5 sensor HAL modules extracted from the G900T NCH stock system image.
 - `kltetmo/`: T-Mobile radio, QMI, and Bluetooth components.
 
-The source notes and per-tree `SHA256SUMS` identify the inputs. The extracted data came from the pinned TheMuppets Samsung CM11 vendor archive at `80299199ecef3dfc99adbae45660de2b0b1ed21a` and firmware build `G900TUVU1ANCH`. This repository does not contain modem partitions, bootloaders, EFS, or device-unique subscriber data. No Verizon-specific vendor snapshot has been recovered yet.
+The source notes and per-tree `SHA256SUMS` identify the inputs. The baseline extracted data came from the pinned TheMuppets Samsung CM11 vendor archive at `80299199ecef3dfc99adbae45660de2b0b1ed21a`; the sensor HAL pair and its GNU STL runtime were extracted from the G900T NCH stock system image (`G900TUVU1ANCH`). This repository does not contain modem partitions, bootloaders, EFS, or device-unique subscriber data. No Verizon-specific vendor snapshot has been recovered yet.
 
 This public snapshot preserves the assembled vendor payloads, provenance, and hashes so they do not need to be recovered and reassembled from multiple historical sources. The main Project Crystal source repository also retains the extraction inventories and scripts.
